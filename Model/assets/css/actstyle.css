@@ -1,0 +1,462 @@
+#mainContainer
+{
+position:relative;
+width:925px;
+height:570px;
+margin:0px auto;
+border:0px solid;
+}
+#w_holder
+{
+position:absolute;
+top:498px;
+left:420px;
+width:100px;
+height:30px;
+background: #929496;
+color:#ffffff;
+text-align:center;
+line-height: 30px;
+font-family: Roboto-Medium;
+padding-left: 23px;
+padding-right: 5px;
+}
+#wcircle
+{
+
+}
+#wratlabel
+{
+position:absolute;
+top:-13px;
+left:-27px;
+}
+
+#b_holder
+{
+position:absolute;
+top:498px;
+left:600px;
+width:100px;
+height:30px;
+background: #929496;
+color:#ffffff;
+text-align:center;
+line-height: 30px;
+font-family: Roboto-Medium;
+padding-left: 23px;
+padding-right: 5px;
+}
+#bcircle
+{
+
+}
+#bratlabel
+{
+position:absolute;
+top:-13px;
+left:-27px;
+}
+#hunt
+{
+position:absolute;
+top:498px;
+left:15px;
+width:100px;
+background: #ffcc00;
+color:#000000;
+text-align:center;
+padding: 6px;
+cursor:pointer;
+}
+#resetGameCanvas
+{
+position:absolute;
+top:498px;
+left:135px;
+width:100px;
+background: #929496;
+color:#ffffff;
+text-align:center;
+padding: 6px;
+cursor:default;
+}
+#canvasContainer
+{
+position: absolute;
+top: 80px;
+left: 90px;
+width: 740px;
+height: 370px;
+display: none;
+background: #ffffff;
+}
+#clabel
+{
+text-align:center;
+font-family: Roboto-Medium;
+margin-top:10px;
+}
+#lineCanvas
+{
+position:absolute;
+top: 40px;
+left: 55px;
+border:0px solid;
+}
+#canvas
+{
+position:absolute;
+top: 80px;
+left: 360px;
+}
+#canvas2
+{
+position:absolute;
+top: 80px;
+left: 545px;
+}
+.num
+{
+position:absolute;
+font-family: Roboto-Regular;
+text-align: right;
+width: 50px;
+font-size: 13px;
+}
+#cclose
+{
+position:absolute;
+top:3px;
+}
+#beforelabel
+{
+position: absolute;
+top: 60px;
+left: 416px;
+font-family: Roboto-Regular;
+text-align: center;
+font-size: 15px;
+}
+#afterlabel
+{
+position: absolute;
+top: 60px;
+left: 611px;
+font-family: Roboto-Regular;
+text-align: center;
+font-size: 15px;
+}
+#beforelinelabel
+{
+position: absolute;
+top: 300px;
+left: 53px;
+font-family: Roboto-Regular;
+text-align: center;
+font-size: 13px;
+}
+#afterlinelabel
+{
+position: absolute;
+top: 300px;
+left: 294px;
+font-family: Roboto-Regular;
+text-align: center;
+font-size: 13px;
+}
+.popUpCloseIcon {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    cursor: pointer;
+    width: 30px;
+}
+#tab-bloker
+{
+position:absolute;
+top:100px;
+left:100px;
+width:100px;
+height:100px;
+background:red;
+}
+#lightlinelabel
+{
+position:absolute;
+top:330px;
+left:155px;
+border:0px solid;
+font-size: 13px;
+font-family: Roboto-Regular;
+}
+#lightLineMarker
+{
+position: relative;
+display: inline-block;
+border: 0px solid;
+width: 25px;
+top: -2px;
+margin-right: 7px;
+border-radius: 25px;
+height: 5px;
+background:#c2986e;
+}
+#darklinelabel
+{
+position:absolute;
+top:330px;
+left:265px;
+border:0px solid;
+font-size: 13px;
+font-family: Roboto-Regular;
+}
+#darkLineMarker
+{
+position: relative;
+display: inline-block;
+border: 0px solid;
+width: 25px;
+top: -2px;
+margin-right: 7px;
+border-radius: 25px;
+height: 5px;
+background:#5e3b1c;
+}
+
+
+#lightPielabel
+{
+position:absolute;
+top:275px;
+left:388px;
+border:0px solid;
+font-size: 13px;
+font-family: Roboto-Regular;
+}
+#lightPieMarker
+{
+position: relative;
+display: inline-block;
+border: 0px solid;
+width: 5px;
+top: -2px;
+margin-right: 3px;
+height: 5px;
+background:#c2986e;
+}
+#darkPielabel
+{
+position:absolute;
+top:275px;
+left:470px;
+border:0px solid;
+font-size: 13px;
+font-family: Roboto-Regular;
+}
+#darkPieMarker
+{
+position: relative;
+display: inline-block;
+border: 0px solid;
+width: 5px;
+top: -2px;
+margin-right: 3px;
+height: 5px;
+background:#5e3b1c;
+}
+
+
+#lightPielabel2
+{
+position:absolute;
+top:275px;
+left:575px;
+border:0px solid;
+font-size: 13px;
+font-family: Roboto-Regular;
+}
+#lightPieMarker2
+{
+position: relative;
+display: inline-block;
+border: 0px solid;
+width: 5px;
+top: -2px;
+margin-right: 3px;
+height: 5px;
+background:#c2986e;
+}
+#darkPielabel2
+{
+position:absolute;
+top:275px;
+left:655px;
+border:0px solid;
+font-size: 13px;
+font-family: Roboto-Regular;
+}
+#darkPieMarker2
+{
+position: relative;
+display: inline-block;
+border: 0px solid;
+width: 5px;
+top: -2px;
+margin-right: 3px;
+height: 5px;
+background:#5e3b1c;
+}
+#yaxislabel {
+    position: absolute;
+    top: 160px;
+    left: -27px;
+    font-size: 13px;
+    transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+}
+#videoAnimation
+{
+position: absolute;
+width: 924px;
+height: 554px;
+left: 0px;
+top: 34px;
+z-index: 1;
+opacity: 0.5;
+}
+#activity #canvasContainer
+{
+position: absolute;
+top: 50px;
+left: 305px;
+width: 615px;
+height: 370px;
+display: none;
+background: #ffffff;
+}
+#activity #canvas
+{
+left: 283px;
+}
+#activity #canvas2
+{
+left: 437px;
+}
+#activity #beforelabel
+{
+left: 338px;
+}
+#activity #afterlabel
+{
+left: 501px;
+}
+#activity #lightPielabel
+{
+top: 265px;
+left: 316px;
+}
+#activity #darkPielabel
+{
+top: 265px;
+left: 392px;
+}
+#activity #lightPielabel2
+{
+top: 265px;
+left: 467px;
+}
+#activity #darkPielabel2
+{
+top: 265px;
+left: 543px;
+}
+#activity #afterlinelabel
+{
+left: 245px;
+}
+#activity #lightlinelabel
+{
+left: 107px;
+}
+#activity #darklinelabel
+{
+left: 215px;
+}
+#dummyDiv
+{
+position: absolute; top: 0px;left: 0px; width: 100%;height: 100%;z-index: 2;
+}
+#dummyCloseDiv
+{
+position: absolute; top: 0px; height: 35px;z-index: 2; right: 0px; width: 35px;
+}
+#mouseLabelBlocker
+{
+position: absolute; top: 480px; left: 390px; width: 345px; height: 60px;
+}
+#huntBlocker
+{
+position: absolute; top: 507px; left: 14px; width: 116px; height: 42px;
+}
+#explore #canvasContainer #dummyDiv,#explore #canvasContainer #dummyCloseDiv,#explore #mouseLabelBlocker,#explore #huntBlocker
+{
+display:none;
+}
+#activity .chheader2Act
+{
+cursor:default;
+}
+#labhilightst
+{
+	position: absolute;
+    width: 112px;
+    height: 32px;
+    border: 1px solid red;
+    top: 496px;
+    left: 12px;
+    background: yellow;
+    background: transparent;
+    border: 3px solid #FFEB3B;
+    box-shadow: 0px 0px 27px #FFEB3B;
+   
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+	display:none;
+	
+}
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.1; }
+    100% { opacity: 1.0; }
+}
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.1; }
+    100% { opacity: 1.0; }
+}
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.1; }
+    100% { opacity: 1.0; }
+}
+.videoTag_Middle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 924px;
+    height: 554px;
+    //border: 1px solid red;
+}

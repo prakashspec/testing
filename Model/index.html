@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+<title>Variation And Survival</title>
+<link href="assets/css/font.css" rel="stylesheet"/>
+<link href="assets/css/template.css" rel="stylesheet"/>
+<link href="assets/css/actstyle.css" rel="stylesheet"/>
+<link href="assets/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+<script src="assets/js/jquery-2.0.0.min.js"></script>
+<script src="assets/js/rotate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/eventjs.js"></script>
+<script src="assets/js/activity.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/jquery.preload.js"></script>
+
+		<script src="assets/js/html2canvas_0.4.1.js"></script>
+<script>
+	$(function(){
+		var imgs = [
+			'assets/video/act1_14-2.mp4',
+			'assets/video/act2_15-2.mp4',
+			'assets/video/act3_10-4.mp4',
+			'assets/video/rat.mp4',
+		    'assets/images/template/info_icon.png',
+			'assets/images/template/close.png',
+			'assets/images/template/rslider.png',
+			'assets/images/template/audio_icon_normal.png',
+			'assets/images/template/audio_icon_play.png',
+			'assets/images/template/camera_icon.png',
+			'assets/images/template/camera_icon_disabled.png',
+			'assets/images/template/left_slider_act.png',
+			'assets/images/template/left_slider_deact.png',
+			'assets/images/help/audio_icon.png',
+		    'assets/images/template/lslider.png',
+			'assets/images/template/ok_btn.png',
+			'assets/images/template/ok_btn_active.png',
+			'assets/images/template/ok_btn_clkd.png',			
+			'assets/images/template/reset-01.png',			
+			'assets/images/template/right_slider_act.png',
+			'assets/images/template/right_slider_deact.png',
+			'assets/images/help/camera_icon.png',
+			'assets/images/help/info_icon.png',
+			'assets/images/activity/forestbg.png',
+			'assets/images/activity/forestleaf.png',
+			'assets/images/activity/desertbg.png',
+			'assets/images/activity/desertleaf.png',
+			'assets/images/activity/arrow.png',
+			'assets/images/activity/blackrat2.png',
+			'assets/images/activity/blackrat3.png',
+			'assets/images/activity/eaglesprite.png',
+			'assets/audio/desertAudio.mp3',
+			'assets/audio/forestAudio.mp3',
+			'assets/audio/hawkAudio.mp3',
+			'assets/audio/vlvasa_01.mp3',
+			'assets/audio/vlvasa_02.mp3',
+			'assets/audio/vlvasa_03.mp3',
+			'assets/audio/vlvasa_04.mp3',
+			'assets/audio/vlvasa_05.mp3',
+			'assets/audio/vlvasa_06.mp3',
+			'assets/audio/vlvasa_07.mp3',
+			'assets/audio/vlvasa_08.mp3',
+			'assets/audio/vlvasa_09.mp3',
+			'assets/audio/vlvasa_10.mp3',
+			'assets/audio/vlvasa_11.mp3',
+			'assets/audio/vlvasa_12.mp3',
+			'assets/audio/vlvasa_13.mp3',
+			'assets/audio/vlvasa_14.mp3',
+			'assets/audio/vlvasa_15.mp3',
+			'assets/audio/vlvasa_16.mp3',
+			'assets/audio/vlvasa_17.mp3',
+			'assets/audio/vlvasa_18.mp3',
+			'assets/audio/vlvasa_19.mp3',
+			'assets/audio/vlvash_01.mp3',
+			'assets/audio/vlvash_02.mp3',
+			'assets/audio/vlvash_03.mp3',
+			'assets/audio/vlvash_04.mp3',
+			'assets/audio/vlvash_05.mp3',
+			'assets/audio/vlvasi_01.mp3',
+			'assets/audio/vlvasi_02.mp3',
+			'assets/audio/vlvasi_03.mp3',
+			'assets/audio/vlvasi_04.mp3',
+			'assets/audio/vlvasi_05.mp3',
+			'assets/audio/vlvasi_06.mp3',
+		 ];		
+		$.preload(imgs, {
+		    each: function (count) {
+			
+				
+		    },
+		    all: function () {
+				$('.screenArea').css('visibility','visible');				
+			    $('.screenload').css('display','none');
+			    $('.preloaderImg').css('display','none');
+		    }
+		});
+	});
+</script>
+
+</head>
+<body>
+<div class="container">
+ 	<div class="header">
+    	<span class="activity_title"></span>
+		<span class="infoIcon"></span>
+        <span id="rtxt_1" name="welcome" class="rtxt welcome">Welcome</span>
+        <span id="rtxt_2" name="explore" class="rtxt explore">Explore</span>
+        <span id="rtxt_3" name="activity" class="rtxt activity">Activity</span>
+    </div>
+	<img src="assets/edge/images/bg_blur.png" alt="BgBlur" width="924px" height="588px" style="position: absolute;top:42px;z-index:0"/>
+	<div class="screenArea" audio-mode="off" style="visibility:hidden">
+		<div class="sliderContain"></div>				
+		<!-- Welcome Page -->
+		<div id="welcome" class="workArea">	
+<iframe src="assets/edge/index.html" id="myFrame" width="924" height="588" scroll="no" style="border:none;"></iframe>						
+		</div>
+		<div class="bubbleDiv"></div>
+		<!--Audio Div -->
+		<div class="expDiv">		
+			<div class="headerDrag"><div>&equiv;</div></div>			
+			<div class="expChild">			
+				<div class="expimgcont" id="expimgcont" style="display: block;">
+					<img class='popupImages' width="180px" draggable="false" style="border-radius:12px;" src="assets/images/activity/test.png" alt="test" >
+				</div> 
+				<div class='audioTextDiv'>
+					<div class='audioIconClass'>
+						<img src="assets/images/template/audio_icon_normal.png" alt="audioButton" class="expDivIcon expAudio" audio-state="pause" />
+					</div>
+					<p class="expPara" >
+						Test...
+					</p>
+				</div>
+			</div>
+			<div class="expFoodBar">
+				<!-- <div class="moveNextFood" data-attend="0"></div> -->
+				<div class="PreBtnSlider navSliderBtn" data-attend="0"></div>
+				<span style="width:42px"></span>
+				<div class="nxtBtnSlider navSliderBtn" data-attend="0"></div>
+			</div>
+			<img src="assets/images/template/lslider.png"  class="activeSlider" alt="Slide Animation" />
+		</div>
+		<!--Explore Page -->
+		<div class='commonWorkArea'>
+		<div id="mainContainer">
+		<video class='videoTag_Middle' id="sunamiVideo" muted>
+				  <source  type="video/mp4">
+				</video>
+<div class="gameContainer" id="gameContainer"></div>
+
+<div id="w_holder">
+<span id="wkilled">0</span> out of <span id="wtotal">50</span>
+<div id="wcircle"></div>
+<div id="wratlabel"><img src="assets/images/activity/wratlabel.png" alt="whiteRat" /></div>
+</div>
+
+
+<div id="b_holder">
+<span id="bkilled">0</span> out of <span id="btotal">50</span>
+<div id="bcircle"></div>
+<div id="bratlabel"><img src="assets/images/activity/bratlabel.png" alt="blackRat" /></div>
+</div>
+<div id="mouseLabelBlocker"></div>
+<div id="labhilightst"></div>
+<div id="hunt">Hunt</div>
+<div id="huntBlocker"></div>
+<div id="resetGameCanvas">Reset</div>
+<div id="canvasContainer">
+<div id="dummyDiv" style=""></div>
+<div id="dummyCloseDiv" style=""></div>
+<div id="clabel">Mouse Population</div>
+<div class="num">100</div>
+<div class="num">90</div>
+<div class="num">80</div>
+<div class="num">70</div>
+<div class="num">60</div>
+<div class="num">50</div>
+<div class="num">40</div>
+<div class="num">30</div>
+<div class="num">20</div>
+<div class="num">10</div>
+<div class="num">0</div>
+<div id="beforelabel">Before Hunt</div>
+<div id="afterlabel">After Hunt</div>
+<div id="lightPielabel"><span id="lightPieMarker"></span>Light Mice</div>
+<div id="darkPielabel"><span id="darkPieMarker"></span>Dark Mice</div>
+
+<div id="lightPielabel2"><span id="lightPieMarker2"></span>Light Mice</div>
+<div id="darkPielabel2"><span id="darkPieMarker2"></span>Dark Mice</div>
+
+<div id="beforelinelabel">Before Hunt</div>
+<div id="afterlinelabel">After Hunt</div>
+<div id="yaxislabel">Number of Mice</div>
+<div id="lightlinelabel"><span id="lightLineMarker"></span>Light Mice</div>
+<div id="darklinelabel"><span id="darkLineMarker"></span>Dark Mice</div>
+<img src="assets/images/template/close.png" alt="closeButton" id="cclose" class="popUpCloseIcon">
+<canvas id="lineCanvas" ></canvas>
+<canvas id="canvas" height="250" width="200"></canvas>
+<canvas id="canvas2" height="250" width="200"></canvas>
+</div>
+</div>	
+		</div>
+		<div id="explore" class="workArea" data-class="explore">
+				<div class="highlightTab">
+					<div class="button chheader1" bubble="monterey" id="explore_ch1" data-show="1">Forest</div>
+					<div class="button chheader2" bubble="amazon" id="explore_ch2" data-show="2">Desert</div>
+				</div>
+		</div>
+		<div id="activity" class="workArea" data-class="activity" style="display:none">
+				<div class="highlightTab">
+					<div class="button chheader1" bubble="monterey" id="activity_ch1" data-show="1">Forest</div>
+					<div class="button chheader2" bubble="amazon" id="activity_ch2" data-show="2">Desert</div>
+				</div>
+		</div> 
+		<!--Right Tab Menu -->
+		<div class="Modes">
+			<div class="rightGrpBtn">	
+				<div class="rightlabel1 labelRight labelArrow" id="rightlabel_1"></div>			
+				<div class="rightlabel2 labelRight" id="rightlabel_2"></div>
+			</div>
+		</div>
+		
+		<!--Menu Tab  -->
+		
+		<!--Activity Page -->
+		  
+		<!--Help window -->
+		<audio id ='audioId' src="./assets/audio/forestAudio.mp3"></audio>
+		<div class="helpwindow">
+			<div class="helpinner">
+			<div class="helpBlockTopWhite" style="z-index: 9;height:10px;width:555px;position:absolute;background:white;top:152px"></div>
+			    <div class="help1" data-class="lclass">Background Information</div>
+				<div class="help2" data-class="rclass">Help</div>
+				<div class="helpBlock1"></div>
+				<div class="helpBlock2"></div>
+				<img src="assets/images/template/close.png" alt="closeButton" class="closeIcon"/>
+				<div class="helpBlockBotWhite" style="z-index: 9;height:10px;width:555px;position:absolute;background:white;bottom:104px"></div>
+			</div>
+		</div>	
+	</div>
+	<div style="position:absolute;width:924px;height:588px;top:42px;background:rgba(0,0,0,0.5)" class="screenload"></div>
+	<img class="preloaderImg" src="assets/images/template/preloader2.gif" width="62px" style="position:absolute;left:0;top:0; right:0; bottom:0; margin:auto;z-index:1" alt="preloder" />
+	<div class="screenIcon" >	</div>
+	<div class="videoPreloader" style="position:relative;width:924px;height:630px;z-index:100;display:none">
+		<img src="assets/edge/images/preloader2.gif" style="position: absolute;
+    margin: auto;top: 0;left: 0;right: 0;bottom: 0;" alt="preloder" />
+	</div>
+	</div>
+	<script src="assets/js/phaser.min.js"></script>
+<script src="assets/js/main.js"></script>
+        <script src="assets/js/explore.js"></script>
+        <script src="assets/js/timer.js"></script>
+        <script src="assets/js/canvasdrawing.js"></script>
+</body>
+</html>
+
